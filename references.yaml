@@ -1,0 +1,7 @@
+name: namespace
+componentName: github.com/ammar-demos/namespace
+version: 1.0.0
+---
+name: carts
+componentName: github.com/ammar-demos/carts
+version: 1.0.0

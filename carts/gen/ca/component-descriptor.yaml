@@ -1,0 +1,40 @@
+apiVersion: ocm.software/v3alpha1
+kind: ComponentVersion
+metadata:
+  name: github.com/ammardemos/carts
+  provider:
+    name: ammardemos
+  version: 1.0.0
+repositoryContexts: []
+spec:
+  resources:
+  - access:
+      localReference: sha256.f4504056b2f56a7c842cda7b9a91da50558b2bcedfaa38288d5c24503216cdc9
+      mediaType: application/yaml
+      type: localBlob
+    name: config
+    relation: local
+    type: configdata.ocm.software
+    version: 1.0.0
+  - access:
+      imageReference: docker.io/ammar31/python-django-2.3
+      type: ociArtifact
+    name: app-image
+    relation: external
+    type: ociImage
+    version: 1.0.0
+  - access:
+      imageReference: docker.io/ammar31/database-app:1.0.0
+      type: ociArtifact
+    name: db-image
+    relation: external
+    type: ociImage
+    version: 1.0.0
+  - access:
+      localReference: sha256.e03d78e0e22fa71e99eed54da6bf1e86dc36779dbd4e4bb4937609a2dccc5aa8
+      mediaType: application/x-tgz
+      type: localBlob
+    name: manifests
+    relation: local
+    type: kustomize.ocm.fluxcd.io
+    version: 1.0.0

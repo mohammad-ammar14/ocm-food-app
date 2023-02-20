@@ -1,0 +1,30 @@
+name: config
+type: configdata.ocm.software
+input:
+  type: file
+  mediaType: application/yaml
+  path: ./configdata.yaml
+  compress: true
+---
+name: app-image
+relation: external
+type: ociImage
+version: 1.0.0
+access:
+  type: ociArtifact
+  imageReference: docker.io/ammar31/python-django-2.3
+---
+name: db-image
+relation: external
+type: ociImage
+version: 1.0.0
+access:
+  type: ociArtifact
+  imageReference: docker.io/ammar31/database-app:1.0.0
+---
+name: manifests
+type: kustomize.ocm.fluxcd.io
+input:
+  type: dir
+  path: ./kubernetes
+  compress: true
