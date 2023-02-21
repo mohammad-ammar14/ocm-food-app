@@ -20,7 +20,7 @@ metadata:
   namespace: default
   # provider: 
   #   name: mohammad-ammar14
-  version: 1.0.0  
+  #version: 1.0.0  
 spec:
   interval: 1m0s
   component: github.com/mohammad-ammar14/ocm-food-app
