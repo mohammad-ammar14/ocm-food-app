@@ -31,7 +31,5 @@ spec:
     secretRef:
       name: creds
   references:
-  - componentName: github.com/mohammad-ammar14/carts
-    name: carts
-    version: 1.0.0
+    expand: true
     
