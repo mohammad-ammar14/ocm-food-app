@@ -1,9 +1,9 @@
 apiVersion: ocm.software/v3alpha1
 kind: ComponentVersion
 metadata:
-  name: github.com/ammardemos/carts
+  name: github.com/mohammad-ammar14/carts
   provider:
-    name: ammardemos
+    name: mohammad-ammar14
   version: 1.0.0
 repositoryContexts: []
 spec:

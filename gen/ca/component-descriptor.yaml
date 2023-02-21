@@ -1,0 +1,13 @@
+apiVersion: ocm.software/v3alpha1
+kind: ComponentVersion
+metadata:
+  name: github.com/mohammad-ammar14/ocm-food-app
+  provider:
+    name: mohammad-ammar14
+  version: 1.0.0-dev
+repositoryContexts: []
+spec:
+  references:
+  - componentName: github.com/mohammad-ammar14/carts
+    name: carts
+    version: 1.0.0
