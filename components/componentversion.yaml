@@ -13,7 +13,7 @@
 #     name: carts
 #     version: 1.0.0
 
-apiVersion: delivery.ocm.software/v1alp
+apiVersion: delivery.ocm.software/v1alpha1
 kind: ComponentVersion
 metadata:
   name: ocm-food-app
