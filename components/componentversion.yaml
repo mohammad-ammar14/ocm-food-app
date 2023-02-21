@@ -18,8 +18,8 @@ kind: ComponentVersion
 metadata:
   name: ocm-food-app
   namespace: default
-  provider: 
-    name: mohammad-ammar14
+  # provider: 
+  #   name: mohammad-ammar14
   version: 1.0.0  
 spec:
   interval: 1m0s
